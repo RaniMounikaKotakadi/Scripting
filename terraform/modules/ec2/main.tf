@@ -8,7 +8,7 @@ data "aws_ami" "ami" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"]
+    values = [var.aminame]
   }
 
   filter {
@@ -16,7 +16,7 @@ data "aws_ami" "ami" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = [var.owner] # Canonical
 }
 
 resource "aws_default_vpc" "default" {
