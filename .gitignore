@@ -1,0 +1,9 @@
+#  Local .terraform directories
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+# .tfvars files
+*.tfvars
+*/terraform/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.51.0_x4
+.env
